@@ -5,6 +5,7 @@ bin-release/
 [Bb]in/
 .settings/
 node_modules/
+dist/
 .umi
 *.swf
 *.air
