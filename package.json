@@ -1,0 +1,22 @@
+{
+    "name": "dt-react-component-landing",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@ant-design/icons": "^4.2.1",
+        "enquire-js": "^0.2.1",
+        "rc-queue-anim": "^1.8.5",
+        "rc-scroll-anim": "^2.7.4",
+        "rc-tween-one": "^2.7.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    },
+    "scripts": {
+        "start": "umi dev",
+        "build": "umi build"
+    },
+    "devDependencies": {
+        "@umijs/preset-react": "^1.5.5",
+        "umi": "^3.2.3"
+    }
+}
