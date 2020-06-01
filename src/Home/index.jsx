@@ -2,17 +2,19 @@
 /* eslint arrow-parens: 0 */
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
-import scrollScreen from 'rc-scroll-anim/lib/ScrollScreen';
+
 import Nav0 from './Nav0';
 import Banner0 from './Banner0';
-import Feature0 from './Feature0';
-import Footer2 from './Footer2';
+import Content0 from './Content0';
+import Content1 from './Content1';
+import Footer0 from './Footer0';
 
 import {
   Nav00DataSource,
   Banner00DataSource,
-  Feature00DataSource,
-  Footer20DataSource,
+  Content00DataSource,
+  Content10DataSource,
+  Footer01DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
 
@@ -33,10 +35,6 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    /* 如果不是 dva 2.0 请使用以下代码
-    // 实现整屏滚动
-    scrollScreen.init({ location: ['Banner0_0', 'Feature0_0', 'Footer2_0'] });
-    */
     // 适配手机屏幕;
     enquireScreen((b) => {
       this.setState({ isMobile: !!b });
@@ -48,10 +46,6 @@ export default class Home extends React.Component {
       setTimeout(() => {
         this.setState({
           show: true,
-        });
-        // 实现整屏滚动
-        scrollScreen.init({
-          location: ['Banner0_0', 'Feature0_0', 'Footer2_0'],
         });
       }, 500);
     }
@@ -72,16 +66,22 @@ export default class Home extends React.Component {
         dataSource={Banner00DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Feature0
-        id="Feature0_0"
-        key="Feature0_0"
-        dataSource={Feature00DataSource}
+      <Content0
+        id="Content0_0"
+        key="Content0_0"
+        dataSource={Content00DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Footer2
-        id="Footer2_0"
-        key="Footer2_0"
-        dataSource={Footer20DataSource}
+      <Content1
+        id="Content1_0"
+        key="Content1_0"
+        dataSource={Content10DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Footer0
+        id="Footer0_1"
+        key="Footer0_1"
+        dataSource={Footer01DataSource}
         isMobile={this.state.isMobile}
       />,
     ];
