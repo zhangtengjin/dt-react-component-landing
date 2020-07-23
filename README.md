@@ -1,4 +1,4 @@
-# dt-react-component-landing
+# landing
 
 ## 介绍
 使用 [umi脚手架](https://umijs.org/) 快速生成的 react 应用
@@ -14,7 +14,7 @@ npm run build
 ```
 ## 参考资料
 
-[umi](https://github.com/umijs/umi)
+[umi](https://github.com/umijs/umi)  
 [landing](https://github.com/ant-design/ant-design-landing)
 
 
